@@ -1,0 +1,146 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$grey-txt: rgb(80, 77, 77);
+$grey-bg:#eff1fa;
+$dark-grey-bg:rgb(56, 53, 53);
+
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1400px;
+}
+
+h1, h2{
+    font-family: 'Shrikhand', sans-serif;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+header img{
+    width: 50%;
+    margin: 20px 25%;
+}
+
+header{
+    box-shadow: 0px 5px 10px rgb(197, 195, 195);
+    z-index: 0;
+    position: relative;
+}
+
+#location{
+    background-color: #ebebeb;
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    color: $grey-txt;
+    
+}
+
+.chip-icon{
+    margin-right: 10px;
+    color: $grey-txt;
+}
+
+.heading{
+    background-color: $grey-bg;
+    text-align: center;
+    padding: 20px;
+
+    h1{
+    margin: 0;
+    }
+
+    &__btn{
+        border-radius: 50px;
+        border: 0;
+        padding: 18px 20px;
+        background: linear-gradient(160deg, $secondary-color  0%, $primary-color 100%);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.tuto{
+    padding: 0 10px;
+    &__steps{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        counter-reset: my-awesome-counter;
+        &__step{
+            counter-increment: my-awesome-counter;
+            display: flex;
+            align-items: center;
+            &::before{
+                content: counter(my-awesome-counter);
+                background-color: $primary-color;
+                color: white;
+                border-radius: 50px;
+                font-weight: bold;
+                padding: 6px 10px;
+            }
+            &__txt{
+                border-radius: 10px;
+                box-shadow: 0px 5px 10px rgb(197, 195, 195);
+                margin: 5px 30px 5px 0;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 20px;
+                width: 100%;
+            }
+            padding: 25px;
+        }
+    }
+}
+
+.list-restaus{
+    padding: 20px 10px;
+    background-color: $grey-bg;
+}
+
+.restau-widget{
+    box-shadow: 0px 5px 10px rgb(197, 195, 195);
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    &__img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    &__subpart{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        &__heart-btn{
+            border:0;
+            font-size: 40px;
+        }
+    }
+}
+
+footer{
+    background-color: $dark-grey-bg;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    .chip-icon{
+        color: white;
+    }
+    .logo{
+        filter: brightness(20);
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
+
