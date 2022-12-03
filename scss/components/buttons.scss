@@ -1,0 +1,17 @@
+.btn{
+    border-radius: 50px;
+    border: 0;
+    padding: 18px 20px;
+    &--gradient{
+        background: linear-gradient(160deg, $secondary-color  0%, $primary-color 100%);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.heart-btn{
+    border:0;
+    font-size: 40px;
+    background-color: white;
+}

@@ -36,6 +36,8 @@ header img {
 
 header {
   box-shadow: 0px 5px 10px rgb(197, 195, 195);
+  display: flex;
+  align-items: center;
   z-index: 0;
   position: relative;
 }
@@ -98,62 +100,6 @@ footer .logo {
   background-color: white;
 }
 
-#location {
-  background-color: #ebebeb;
-  margin: 0;
-  padding: 30px 0;
-  text-align: center;
-  color: rgb(80, 77, 77);
-}
-
-.chip-icon {
-  margin-right: 10px;
-  color: rgb(80, 77, 77);
-}
-
-.heading {
-  background-color: #eff1fa;
-  text-align: center;
-  padding: 20px;
-}
-.heading h1 {
-  margin: 0;
-}
-
-.tuto {
-  padding: 0 10px;
-}
-.tuto__steps {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  counter-reset: my-awesome-counter;
-}
-.tuto__steps__step {
-  counter-increment: my-awesome-counter;
-  display: flex;
-  align-items: center;
-  padding: 25px;
-}
-.tuto__steps__step::before {
-  content: counter(my-awesome-counter);
-  background-color: #9356DC;
-  color: white;
-  border-radius: 50px;
-  font-weight: bold;
-  padding: 6px 10px;
-}
-.tuto__steps__step__txt {
-  box-shadow: 0px 5px 10px rgb(197, 195, 195);
-  border-radius: 10px;
-  margin: 5px 30px 5px 0;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 20px;
+.banner {
   width: 100%;
-}
-
-.list-restaus {
-  padding: 20px;
-  background-color: #eff1fa;
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=menu.css.map */

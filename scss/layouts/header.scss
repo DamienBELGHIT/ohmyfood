@@ -1,0 +1,15 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+header img{
+    width: 50%;
+    margin: 20px 25%;
+}
+
+header{
+    @include grey-shadow;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+}
