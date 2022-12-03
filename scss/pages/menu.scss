@@ -7,5 +7,60 @@
 @import "../components/buttons.scss";
 
 .banner{
-    width: 100%;
+    height: 290px;
+    img{
+        width: 100%;
+        height: 364px;
+        object-fit: cover;
+    }
+}
+
+.menu{
+    padding: 30px 20px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: $grey-bg;
+    position:relative;
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.dish-heading{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    &::after{
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: $tertiary-color;
+    }
+}
+
+.dish{
+    background-color: white;
+    @include grey-shadow;
+    text-align: start;
+    border: 0;
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 10px 20px 5px 10px;
+    h2{
+        margin: 0;
+    }
+    &__subpart{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+        &__price{
+            font-weight: bold;
+            color: $grey-txt;
+        }
+    }
 }
