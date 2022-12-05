@@ -421,4 +421,11 @@ footer .logo {
   line-height: 90px;
   width: 0;
   transition: width 0.5s ease;
+}
+
+@media only screen and (min-width: 992px) {
+  .menu {
+    margin: auto;
+    width: 50%;
+  }
 }/*# sourceMappingURL=menu.css.map */

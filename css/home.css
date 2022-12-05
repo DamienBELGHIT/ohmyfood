@@ -318,4 +318,19 @@ footer .logo {
 .list-restaus {
   padding: 20px;
   background-color: #f0f1f7;
+}
+
+@media only screen and (min-width: 992px) {
+  .tuto__steps {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .list-restaus ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .restau-widget {
+    width: 45%;
+    margin: 2%;
+  }
 }/*# sourceMappingURL=home.css.map */
