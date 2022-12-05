@@ -64,39 +64,33 @@
     transform: rotate(360deg);
   }
 }
-.btn {
-  border-radius: 50px;
-  border: 0;
-  padding: 18px 20px;
+@-webkit-keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
 }
-.btn--gradient {
-  background: linear-gradient(160deg, #FF79DA 0%, #9356DC 100%);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
 }
-
-.heart-btn {
-  border: 0;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
+@-webkit-keyframes disappear {
+  100% {
+    z-index: -1;
+    visibility: hidden;
+  }
 }
-.heart-btn__border {
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 2px black;
-  font-size: 40px;
-}
-.heart-btn__border:hover {
-  -webkit-text-stroke: 0;
-  -webkit-animation: heart-fill 1s ease-in-out;
-          animation: heart-fill 1s ease-in-out;
-  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  opacity: 1;
-}/*# sourceMappingURL=buttons.css.map */
+@keyframes disappear {
+  100% {
+    z-index: -1;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=keyframes.css.map */
