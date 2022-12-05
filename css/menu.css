@@ -42,6 +42,9 @@ header {
   font-size: 3em;
   padding: 0 5%;
 }
+header a {
+  color: black;
+}
 
 footer {
   background-color: rgb(56, 53, 53);
