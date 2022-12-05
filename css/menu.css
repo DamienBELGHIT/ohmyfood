@@ -42,7 +42,8 @@ header {
   font-size: 3em;
   padding: 0 5%;
 }
-header a {
+
+.arrow-back {
   color: black;
 }
 
