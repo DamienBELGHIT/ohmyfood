@@ -72,12 +72,23 @@ footer .logo {
   border-radius: 20px;
   overflow: hidden;
   border: 0;
+  position: relative;
 }
 .restau-widget__img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.restau-widget__new {
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 10px 15px;
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  margin: 1%;
 }
 .restau-widget__subpart {
   color: black;

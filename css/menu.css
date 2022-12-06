@@ -86,6 +86,10 @@ footer .logo {
   justify-content: space-between;
   padding: 0 10px;
 }
+.restau-widget__subpart__desc__new {
+  background-color: #99E2D0;
+  color: green;
+}
 
 @-webkit-keyframes heart-fill {
   0% {
