@@ -20,6 +20,7 @@ a:link {
 }
 a:visited {
   text-decoration: none;
+  color: white;
 }
 a:hover {
   text-decoration: none;
@@ -65,6 +66,11 @@ footer .logo {
   margin-bottom: 10px;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .restau-widget {
   box-shadow: 0px 5px 10px rgb(197, 195, 195);
   margin: 10px 0;
@@ -72,12 +78,23 @@ footer .logo {
   border-radius: 20px;
   overflow: hidden;
   border: 0;
+  position: relative;
 }
 .restau-widget__img {
   width: 100%;
-  height: 300px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.restau-widget__new {
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 10px 15px;
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  margin: 1%;
 }
 .restau-widget__subpart {
   color: black;
@@ -85,10 +102,6 @@ footer .logo {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-}
-.restau-widget__subpart__desc__new {
-  background-color: #99E2D0;
-  color: green;
 }
 
 @-webkit-keyframes heart-fill {
