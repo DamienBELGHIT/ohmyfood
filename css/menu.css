@@ -35,9 +35,14 @@ header img {
 }
 
 header {
-  box-shadow: 0px 5px 10px rgb(197, 195, 195);
+  -webkit-box-shadow: 0px 5px 10px rgb(197, 195, 195);
+          box-shadow: 0px 5px 10px rgb(197, 195, 195);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 0;
   position: relative;
   font-size: 3em;
@@ -52,16 +57,23 @@ footer {
   background-color: rgb(56, 53, 53);
   color: white;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 150px;
 }
 footer .chip-icon {
   color: white;
 }
 footer .logo {
-  filter: brightness(20);
+  -webkit-filter: brightness(20);
+          filter: brightness(20);
   width: 100px;
   margin-bottom: 10px;
 }
@@ -72,7 +84,8 @@ ul {
 }
 
 .restau-widget {
-  box-shadow: 0px 5px 10px rgb(197, 195, 195);
+  -webkit-box-shadow: 0px 5px 10px rgb(197, 195, 195);
+          box-shadow: 0px 5px 10px rgb(197, 195, 195);
   margin: 10px 0;
   background-color: white;
   border-radius: 20px;
@@ -98,9 +111,15 @@ ul {
 }
 .restau-widget__subpart {
   color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 10px;
 }
 
@@ -151,41 +170,51 @@ ul {
 }
 @-webkit-keyframes dish-checkmark-turn {
   0% {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   66% {
-    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @keyframes dish-checkmark-turn {
   0% {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   66% {
-    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @-webkit-keyframes load {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     visibility: hidden;
   }
 }
 @keyframes load {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     visibility: hidden;
   }
 }
@@ -202,7 +231,8 @@ ul {
   }
 }
 .btn {
-  box-shadow: 0px 5px 10px rgb(197, 195, 195);
+  -webkit-box-shadow: 0px 5px 10px rgb(197, 195, 195);
+          box-shadow: 0px 5px 10px rgb(197, 195, 195);
   cursor: pointer;
   border-radius: 50px;
   border: 0;
@@ -219,8 +249,10 @@ ul {
   margin: auto;
 }
 .btn--gradient:hover {
-  box-shadow: 0px 10px 10px rgb(122, 120, 120);
-  filter: brightness(120%);
+  -webkit-box-shadow: 0px 10px 10px rgb(122, 120, 120);
+          box-shadow: 0px 10px 10px rgb(122, 120, 120);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .heart-btn {
@@ -237,6 +269,7 @@ ul {
   -webkit-text-stroke: 0;
   -webkit-animation: heart-fill 1s ease-in-out;
           animation: heart-fill 1s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -258,21 +291,37 @@ ul {
   padding: 30px 20px;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   background-color: #f0f1f7;
   position: relative;
 }
 .menu__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dish-heading {
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .dish-heading::after {
   content: "";
@@ -382,7 +431,8 @@ ul {
 }
 
 .dish {
-  box-shadow: 0px 5px 10px rgb(197, 195, 195);
+  -webkit-box-shadow: 0px 5px 10px rgb(197, 195, 195);
+          box-shadow: 0px 5px 10px rgb(197, 195, 195);
   cursor: pointer;
   background-color: white;
   text-align: start;
@@ -394,6 +444,8 @@ ul {
           animation: dish-appear 1.5s 0s linear alternate;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   padding: 0;
@@ -409,7 +461,9 @@ ul {
 }
 .dish__content {
   padding: 10px 20px 5px 10px;
-  flex: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -422,8 +476,12 @@ ul {
 }
 .dish__content__subpart {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.2em;
 }
 .dish__content__subpart__desc {
@@ -441,6 +499,7 @@ ul {
   text-align: center;
   line-height: 90px;
   width: 0;
+  -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
 }
 

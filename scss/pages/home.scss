@@ -1,10 +1,10 @@
-@import "../utils/variables.scss";
-@import "../utils/mixins.scss";
-@import "../base/base-style.scss";
-@import "../layouts/header.scss";
-@import "../layouts/footer.scss";
-@import "../components/restau-widget.scss";
-@import "../components/buttons.scss";
+@import "../utils/_variables.scss";
+@import "../utils/_mixins.scss";
+@import "../base/_base-style.scss";
+@import "../layouts/_header.scss";
+@import "../layouts/_footer.scss";
+@import "../components/_restau-widget.scss";
+@import "../components/_buttons.scss";
 
 .focus{
     width: 100%;
