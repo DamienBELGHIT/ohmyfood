@@ -110,7 +110,7 @@
     }
 
     .list-restaus ul{
-        display: grid !important;
+        display: grid;
         grid-template-columns: repeat(auto-fill, 350px);
         justify-content: space-between;
         grid-gap: 5px;
