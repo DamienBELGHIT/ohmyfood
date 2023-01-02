@@ -110,12 +110,13 @@
     }
 
     .list-restaus ul{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fill, 350px);
+        justify-content: space-between;
+        grid-gap: 5px;
     }
 
     .restau-widget{
-        width: 45%;
         margin: 2%;
     }
 
